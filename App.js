@@ -112,19 +112,39 @@ export default class App extends Component {
               <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.2, borderRadius: 6}}></View>
               <Image source={require('./logo/gojek-white.png')} style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}}/>
             </View>
-            <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#E8E9EC', borderBottomWidth: 1, marginBottom: 20}}>
+            <View style={{paddingTop: 16, paddingBottom: 20, borderBottomColor: '#E8E9EC', borderBottomWidth: 1}}>
               <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C'}}>GO-NEWS</Text>
-              <Text style={{fontSize: 14, fontWeight:'normal', color: '#7A7A7A', marginBottom: 11}}>Lacklustre Liverpool sneak win at Huddersfield to continue unbeaten run - Premier League 2018-2019</Text>
+              <Text style={{fontSize: 14, fontWeight:'normal', color: '#7A7A7A', marginBottom: 11}}>Liverpool sneak win at Huddersfield to continue unbeaten run - Premier League 2018-2019</Text>
               <TouchableOpacity style={{backgroundColor: '#45AB4A', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'flex-end', borderRadius: 4}}>
                 <Text style={{fontSize: 13, fontWeight: 'bold', color: 'white', alignItems: 'center'}}>READ</Text>
               </TouchableOpacity>
             </View>
           </View>
 
+          {/* Go-Food Banner */}
+          <View style={{padding: 17}}>
+            <View style={{position: 'relative'}}>
+              <Image source={require('./dummy/food-banner.jpg')} style={{height: 170, width: '100%', borderRadius: 6}}/>
+              <View style={{width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, backgroundColor: 'black', opacity: 0.1, borderRadius: 6}}></View>
+              <Image source={require('./logo/gojek-white.png')} style={{height: 15, width: 55, position: 'absolute', top: 16, left: 16}}/>
+              <View style={{position: 'absolute', bottom: 0, left: 0, width: '100%', flexDirection: 'row', alignItems: 'center', paddingHorizontal: 16, paddingBottom: 16}}>
+                <View style={{position: 'relative'}}>
+                  <Text style={{fontSize: 18, fontWeight: 'bold', color: 'white', marginBottom: 8}}> FREE GO-FOOD voucher</Text>
+                  <Text style={{fontSize: 13, fontWeight: '400', color: 'white'}}> Quick, before they run out!</Text>
+                </View>
+                <View style={{flex: 1, paddingLeft: 16}}>
+                  <TouchableOpacity style={{backgroundColor: '#45AB4A', paddingHorizontal: 12, paddingVertical: 11, alignSelf: 'stretch', borderRadius: 4}}>
+                    <Text style={{fontSize: 15, fontWeight: 'bold', color: 'white', alignSelf: 'center'}}>GET VOUCHER</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            </View>
+            <View style={{borderBottomColor: '#E8E9EC', borderBottomWidth: 1, marginTop: 16, marginBottom: 20}}></View>
+          </View>
+
         </ScrollView>
 
         {/* Bottom NAvigation */}
-        
         <View style={{height: 54,flexDirection: 'row', backgroundColor: 'white'}}>
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
             <Image source={require('./icons/home-active.png')} style={{width: 26, height: 26}}/>
