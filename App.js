@@ -139,7 +139,46 @@ export default class App extends Component {
                 </View>
               </View>
             </View>
-            <View style={{borderBottomColor: '#E8E9EC', borderBottomWidth: 1, marginTop: 16, marginBottom: 20}}></View>
+            <View style={{borderBottomColor: '#E8E9EC', borderBottomWidth: 1, marginTop: 16}}></View>
+          </View>
+
+          {/* Nearby Go-food Restaurant */}
+          <View>
+            <View style={{height: 17, width: 60, marginLeft: 17, marginBottom: 10}}>
+              <Image source={require('./logo/go-food.png')} style={{ height: undefined, width: undefined, resizeMode: 'contain', flex: 1}}/>
+            </View>
+            <View style={{flexDirection: 'row', justifyContent: 'space-between', marginBottom: 16, paddingHorizontal: 17}}>
+              <Text style={{fontSize: 17, fontWeight: 'bold', color: '#1C1C1C'}}>Best picks in town</Text>
+              <Text style={{fontSize: 17, fontWeight: 'bold', color: '#44AB4A'}}>See All</Text>
+            </View>
+            <ScrollView horizontal={true} style={{flexDirection: 'row', paddingLeft: 17}}>
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, borderRadius: 10}}>
+                  <Image source={require('./dummy/go-food-mieaceh.jpg')} style={{ height: undefined, width: undefined, resizeMode: 'cover', flex: 1, borderRadius: 10}}/>
+                </View>
+                <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C', marginTop: 12}}>Mie Aceh Casablanca</Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, borderRadius: 10}}>
+                  <Image source={require('./dummy/go-food-kfc.jpg')} style={{ height: undefined, width: undefined, resizeMode: 'cover', flex: 1, borderRadius: 10}}/>
+                </View>
+                <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C', marginTop: 12}}>KFC, Tebet Raya</Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, borderRadius: 10}}>
+                  <Image source={require('./dummy/go-food-mcd.jpg')} style={{ height: undefined, width: undefined, resizeMode: 'cover', flex: 1, borderRadius: 10}}/>
+                </View>
+                <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C', marginTop: 12}}>MCd, Tebet Raya</Text>
+              </View>
+              <View style={{marginRight: 16}}>
+                <View style={{width: 150, height: 150, borderRadius: 10}}>
+                  <Image source={require('./dummy/go-food-hokben.jpg')} style={{ height: undefined, width: undefined, resizeMode: 'cover', flex: 1, borderRadius: 10}}/>
+                </View>
+                <Text style={{fontSize: 16, fontWeight: 'bold', color: '#1C1C1C', marginTop: 12}}>Hokben, Tebet Raya</Text>
+              </View>
+            </ScrollView>
+            <View style={{borderBottomColor: '#E8E9EC', borderBottomWidth: 1,marginHorizontal: 17, marginTop: 16, marginBottom: 20}}></View>
+          
           </View>
 
         </ScrollView>
